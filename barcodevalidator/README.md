@@ -23,7 +23,8 @@ service locally and optionally any assumptions you made.
 
 ## 1.2 Pre-requisites:
 
-Java 
+Java
+
 maven
 
 ## 1.3 Solution & Assumptions:

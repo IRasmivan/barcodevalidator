@@ -31,11 +31,16 @@ maven
 
 1.Service will be available in localhost:8080/barcode/api/validate/{barcode}. I have assumed the input barcode 
 to be provided as PathVariable but there are other options as well.
+
 2.I have added an Swagger URL for interacting with API using UI.
+
 3.I believe the values which is used for assigning weights and multiplying against each position value needs to be maintained as an property (so that it gives a flexibility to store it in a secret file and later retrieve it).
+
 Hence I have not hardcoded the weights in application.properties file in the variable check.digit.calculator.values. It can be maintained as check.digit.calculator.values={CHECK.DIGIT.CALCULATOR.VALUE} if this needs to be maintained in a secret file
-4. Similarly have also retrieved modulo value in property file so that it can be maintained in a secret file if required
+4. Similarly have also retrieved modulo value in property file so that it can be maintained in a secret file if required.
+
 5.Exception handling: In case of invalid barcode being passed and due to which if API fails, it would return a false value. But if required this can be changed to throw an appropriate exception as well.For now I have handled in a way to return false in case of invalid input 
+
 
 ## 1.4 Instructions to run and Interact with API:
 

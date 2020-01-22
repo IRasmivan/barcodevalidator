@@ -50,11 +50,10 @@ Since check digit value and modulo is provided as property , this needs to be pa
 
 for eg is 1 is modulovalue and weights to be multiplied is 12345678
 
-then
+then we can run using below
 
 mvn spring-boot:run -Dspring-boot.run.arguments="--checkdigit.moduloValue=1,--check.digit.calculator.values=12345678"
 
-Please note that {{VALUE}} needs to be provided as INTEGER for both property
 
 2. In order to interact with API, we can use
 
